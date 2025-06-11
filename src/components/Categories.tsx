@@ -6,30 +6,31 @@ interface CategoriesProps {
 
 const Categories: React.FC<CategoriesProps> = ({ onCategoryClick }) => {
   const categories = [
-    {
-      id: 'bracelets',
-      name: 'BRACELETS',
-      image: './public/ring_images/bracelet.jpg',
-      description: 'Tennis & Modern'
-    },
-    {
-      id: 'earrings',
-      name: 'EARRINGS',
-      image: './public/ring_images/earring.jpg',
-      description: 'Studs & Hoops'
-    },
-    {
-      id: 'rings',
-      name: 'RINGS',
-      image: './public/ring_images/rings.jpg',
-      description: 'Engagement & Wedding'
-    },
-    {
-      id: 'necklaces',
-      name: 'NECKLACES',
-      image: './public/ring_images/necklaces.jpg',
-      description: 'Pendants & Chains'
-    }
+      {
+    id: 'bracelets',
+    name: 'BRACELETS',
+    image: '/ring_images/bracelet.jpg', // ✅ correct path
+    description: 'Tennis & Modern',
+  },
+  {
+    id: 'earrings',
+    name: 'EARRINGS',
+    image: '/ring_images/earring.jpg',
+    description: 'Studs & Hoops',
+  },
+  {
+    id: 'rings',
+    name: 'RINGS',
+    image: '/ring_images/rings.jpg',
+    description: 'Engagement & Wedding',
+  },
+  {
+    id: 'necklaces',
+    name: 'NECKLACES',
+    image: '/ring_images/necklaces.jpg',
+    description: 'Pendants & Chains',
+  }
+
   ];
 
   return (
